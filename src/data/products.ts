@@ -292,10 +292,10 @@ export const products: Product[] = [
 export const categories = [...new Set(products.map(product => product.category))];
 export const brands = [...new Set(products.map(product => product.brand))];
 export const priceRanges = [
-  [0, 5000],
+  [0, 500],
+  [500, 1000],
+  [1000, 2000],
+  [2000, 5000],
   [5000, 10000],
-  [10000, 20000],
-  [20000, 50000],
-  [50000, 100000],
-  [100000, Infinity]
+  [10000, Infinity]
 ];
